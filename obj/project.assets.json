@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vikto\\.nuget\\packages\\": {}
+    "C:\\Users\\caspe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programmering\\github repos\\CarDealer\\CarDealer.csproj",
+      "projectUniqueName": "C:\\Users\\caspe\\OneDrive - Hansenberg\\1.g\\Programmering\\CarDealer\\CarDealer.csproj",
       "projectName": "CarDealer",
-      "projectPath": "C:\\Programmering\\github repos\\CarDealer\\CarDealer.csproj",
-      "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
-      "outputPath": "C:\\Programmering\\github repos\\CarDealer\\obj\\",
+      "projectPath": "C:\\Users\\caspe\\OneDrive - Hansenberg\\1.g\\Programmering\\CarDealer\\CarDealer.csproj",
+      "packagesPath": "C:\\Users\\caspe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\caspe\\OneDrive - Hansenberg\\1.g\\Programmering\\CarDealer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vikto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\caspe\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
