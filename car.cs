@@ -8,6 +8,7 @@ class Car
     public decimal damage = 0;
     public float currentSpeed = 0f;
     public float maxSpeed = 0f;
+    public bool Driving = false;
 
     public Car(string test, string placeholder)
     {
@@ -16,5 +17,8 @@ class Car
 
     }
 
-
+    public void DriveMethod()
+    {
+        Driving = true;
+    }
 }
