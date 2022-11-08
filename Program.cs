@@ -1,22 +1,27 @@
-﻿
-Random brandRNG = new Random();
-Random colorRNG = new Random();
-int brandNum = brandRNG.Next(0, 9);
-int colorNum = colorRNG.Next(0, 9);
+﻿carDealer player = new carDealer(0);
+Console.WriteLine("Hello there. You are owner of a car shop with the objective of selling as many cars as possible");
+Thread.Sleep(500);
+Console.WriteLine("Do you wish to see the cars you have?");
+string answer = Console.ReadLine();
 
+if (answer == "yes")
+{
+    player.showCars();
+}
+else
+{
+    Environment.Exit(0);
 
-Car car1 = new Car(StaticCars.CarBrands[brandNum], StaticCars.CarColors[colorNum]);
-Car car2 = new Car(StaticCars.CarBrands[brandNum], StaticCars.CarColors[colorNum]);
-Car car3 = new Car(StaticCars.CarBrands[brandNum], StaticCars.CarColors[colorNum]);
+}
 
-Console.WriteLine("your car is a " + car1.brand + " and has the color " + car1.color);
-Console.WriteLine("do you want to drive your " + car1.color + " " + car1.brand + "?");
+Console.WriteLine("your car is a " + carDealer.randomCars[0].brand + " and has the color " + randomCars[0].color);
+Console.WriteLine("do you want to drive your " + randomCars[0].color + " " + randomCars[0].brand + "?");
 string answer = Console.ReadLine();
 if (answer == "yes")
 {
-    car1.DriveMethod();
+    randomCars[0].DriveMethod();
 }
-if (car1.Driving == true)
+if (randomCars[0].Driving == true)
 {
     Console.WriteLine("you are now driving");
 }
