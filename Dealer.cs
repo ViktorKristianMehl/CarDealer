@@ -1,25 +1,24 @@
-class carDealer
+public class carDealer
 {
 
-    int money = 0;
+    float money = 0f;
 
-    public carDealer(int money)
+    public carDealer(float money)
     {
-        money = 0;
+        money = 0f;
     }
 
     public void showCars()
     {
 
-        Random brandRNG = new Random();
-        Random colorRNG = new Random();
+        Random RNG = new Random();
         List<Car> randomCars = new List<Car>();
         int i = 0;
         while (i < 10)
         {
 
-            int brandNum = brandRNG.Next(0, 9);
-            int colorNum = colorRNG.Next(0, 9);
+            int brandNum = RNG.Next(0, 9);
+            int colorNum = RNG.Next(0, 9);
 
 
 
@@ -32,6 +31,10 @@ class carDealer
             i++;
 
         }
+
+    }
+    public void AdvancedStats()
+    {
 
     }
 
