@@ -15,7 +15,10 @@ else
 }
 
 Console.WriteLine("do yo want to see advanced information about the cars?");
-string anvancedAnswer = Console.ReadLine();
+string advancedAnswer = Console.ReadLine();
 if (advancedAnswer == "yes")
+{
+    player.showList();
+}
 
-    Console.ReadLine();
+Console.ReadLine();
