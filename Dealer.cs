@@ -1,19 +1,22 @@
 public class carDealer
 {
-    List<Car> randomCars = new List<Car>();
-    float money = 0f;
+    public List<Car> randomCars = new List<Car>();
+    public float money = 0f;
+
 
     public carDealer(float money)
     {
+
         money = 0f;
+
+
     }
 
-    public void showCars()
+    public void ShowCars()
     {
-
         Random RNG = new Random();
         int i = 0;
-        int e = 0;
+        int e = 1;
         while (i < 10)
         {
 
@@ -28,30 +31,35 @@ public class carDealer
 
 
             Console.WriteLine(
-            "------------------ \n" +
-            "Brand: " + StaticCars.CarBrands[brandNum] +
+            "Nr. " + e +
+            "\nBrand: " + StaticCars.CarBrands[brandNum] +
             "\nColor: "
             + StaticCars.CarColors[colorNum] +
             "\nDamage: "
             + damage
             + "% \n"
-            + "Price: " + price + "$ \n");
+            + "Price: "
+            + price
+            + "$\n"
+            + "Max Speed: "
+            + maxspeed
+            + " km/h \n"
+            + "------------------");
 
             i++;
+            e++;
 
         }
 
     }
-
-    public void showList()
+    public void ShowAgain()
     {
-        int i = 0;
-        while (i < 10)
+        foreach (var car in randomCars)
         {
-            Console.WriteLine(randomCars);
-            i++;
+            Console.WriteLine();
         }
-
     }
 
-}
+};
+
+
