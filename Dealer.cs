@@ -1,6 +1,6 @@
 public class carDealer
 {
-    List<Car> randomCars = new List<Car>();
+    public List<Car> randomCars = new List<Car>();
     float money = 0f;
 
     public carDealer(float money)
