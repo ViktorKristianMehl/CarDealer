@@ -1,33 +1,18 @@
 ﻿carDealer player = new carDealer(0);
-player.showCars();
 Console.WriteLine("Hello there. You are owner of a car shop with the objective of selling as many cars as possible");
 Thread.Sleep(500);
-Console.WriteLine("Do you wish to see the cars you have?");
-string answer = Console.ReadLine();
+Console.WriteLine("These are the cars you have in your dealership");
+Thread.Sleep(200);
+carDealer player = new carDealer(1000);
+player.ShowCars();
 
-if (answer == "yes")
-{
-    player.showCars();
-}
-else
-{
-    Environment.Exit(0);
 
-}
+Console.WriteLine("wanna see them again?");
+string answerTwo = Console.ReadLine();
 
-Console.WriteLine("do yo want to see advanced information about the cars?");
-string advancedAnswer = Console.ReadLine();
-if (advancedAnswer == "yes")
+if (answerTwo == "yes")
 {
-    player.showList();
+    player.ShowAgain();
 }
 
-    Console.ReadLine();
-
-   {
-    Customer Jesper = new Customer(123f);
-    Jesper.BuyMethod(1000f, player.randomCars[0]);
-
-  
-   }
-
+Console.ReadLine();
