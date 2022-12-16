@@ -1,4 +1,4 @@
-class Customer
+public class Customer
 
 {
     public decimal Condition = 0;
@@ -15,7 +15,7 @@ class Customer
     {
 
         Money = price;
-        Money = Money -price;
+        Money = Money - price;
 
     }
 

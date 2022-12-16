@@ -1,4 +1,4 @@
-﻿carDealer player = new carDealer(0);
+﻿
 Console.WriteLine("Hello there. You are owner of a car shop with the objective of selling as many cars as possible");
 Thread.Sleep(500);
 Console.WriteLine("These are the cars you have in your dealership");

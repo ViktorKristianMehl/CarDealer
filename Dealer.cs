@@ -2,16 +2,13 @@ public class carDealer
 {
     public float money = 0f;
 
-    public List<Car> Cars;
+    public List<Car> randomCars = new List<Car>();
 
 
     public carDealer(float money)
     {
 
         money = 0f;
-
-        Cars = new List<Car>();
-        Cars.Add()
 
 
     }
