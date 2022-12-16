@@ -2,11 +2,16 @@ public class carDealer
 {
     public float money = 0f;
 
+    public List<Car> Cars;
+
 
     public carDealer(float money)
     {
 
         money = 0f;
+
+        Cars = new List<Car>();
+        Cars.Add()
 
 
     }
@@ -60,5 +65,6 @@ public class carDealer
     }
 
 };
+
 
 
