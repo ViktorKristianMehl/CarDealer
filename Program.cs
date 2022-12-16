@@ -4,15 +4,16 @@ Thread.Sleep(500);
 Console.WriteLine("These are the cars you have in your dealership");
 Thread.Sleep(200);
 carDealer player = new carDealer(1000);
-player.ShowCars();
+player.ShowCars(5);
 
 
 Console.WriteLine("wanna see them again?");
 string answerTwo = Console.ReadLine();
-
 if (answerTwo == "yes")
 {
-    player.ShowAgain();
+    player.ShowCars(0);
 }
+
+
 
 Console.ReadLine();
