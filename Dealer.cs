@@ -16,12 +16,11 @@ public class carDealer
 
     }
 
-    public void ShowCars()
+    public void ShowCars(int i)
     {
         Random RNG = new Random();
-        int i = 0;
-        int e = 1;
-        while (i < 10)
+        int x = randomCars.Count;
+        for (i = i + x; x < i; x = randomCars.Count)
         {
 
             int brandNum = RNG.Next(0, 9);
@@ -34,34 +33,15 @@ public class carDealer
             randomCars.Add(new Car(StaticCars.CarBrands[brandNum], StaticCars.CarColors[colorNum], damage, price, maxspeed));
 
 
-            Console.WriteLine(
-            "Nr. " + e +
-            "\nBrand: " + StaticCars.CarBrands[brandNum] +
-            "\nColor: "
-            + StaticCars.CarColors[colorNum] +
-            "\nDamage: "
-            + damage
-            + "% \n"
-            + "Price: "
-            + price
-            + "$\n"
-            + "Max Speed: "
-            + maxspeed
-            + " km/h \n"
-            + "------------------");
-
-            i++;
-            e++;
 
         }
 
-    }
-    public void ShowAgain()
-    {
-        foreach (var car in randomCars)
+        for (x = 0; x < randomCars.Count; x++)
         {
-            Console.WriteLine();
+            Console.WriteLine("Nr. " + (x + 1));
+            randomCars[x].Data();
         }
+
     }
 
 };
