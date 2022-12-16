@@ -52,13 +52,6 @@ public class carDealer
         }
 
     }
-    public void ShowAgain()
-    {
-        foreach (var car in randomCars)
-        {
-            Console.WriteLine();
-        }
-    }
 
 };
 
