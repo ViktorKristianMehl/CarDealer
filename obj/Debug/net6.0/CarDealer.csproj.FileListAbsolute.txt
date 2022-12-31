@@ -1,15 +1,15 @@
-C:\Programmering\github repos\CarDealer\bin\Debug\net6.0\CarDealer.exe
-C:\Programmering\github repos\CarDealer\bin\Debug\net6.0\CarDealer.deps.json
-C:\Programmering\github repos\CarDealer\bin\Debug\net6.0\CarDealer.runtimeconfig.json
-C:\Programmering\github repos\CarDealer\bin\Debug\net6.0\CarDealer.dll
-C:\Programmering\github repos\CarDealer\bin\Debug\net6.0\CarDealer.pdb
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.csproj.AssemblyReference.cache
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfoInputs.cache
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfo.cs
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.csproj.CoreCompileInputs.cache
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.dll
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\refint\CarDealer.dll
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.pdb
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\CarDealer.genruntimeconfig.cache
-C:\Programmering\github repos\CarDealer\obj\Debug\net6.0\ref\CarDealer.dll
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.csproj.AssemblyReference.cache
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfoInputs.cache
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.AssemblyInfo.cs
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.csproj.CoreCompileInputs.cache
+D:\Programmering - Skole\CarDealer\bin\Debug\net6.0\CarDealer.exe
+D:\Programmering - Skole\CarDealer\bin\Debug\net6.0\CarDealer.deps.json
+D:\Programmering - Skole\CarDealer\bin\Debug\net6.0\CarDealer.runtimeconfig.json
+D:\Programmering - Skole\CarDealer\bin\Debug\net6.0\CarDealer.dll
+D:\Programmering - Skole\CarDealer\bin\Debug\net6.0\CarDealer.pdb
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.dll
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\refint\CarDealer.dll
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.pdb
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\CarDealer.genruntimeconfig.cache
+D:\Programmering - Skole\CarDealer\obj\Debug\net6.0\ref\CarDealer.dll
