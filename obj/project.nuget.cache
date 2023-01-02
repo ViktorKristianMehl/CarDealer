@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "f632T3QKWSLC/TEh3vT2T/c9SXAdzSqiLWxZjJz1iJDUq+15MYudYjMk04NRye8Ppdrzsh0WVT3v3R37g8oS1A==",
+  "dgSpecHash": "EEgYd9sTbE2pAmFFfBp0LaD84SMv2UEkw2oryaNudpl2kIca5F4S5xQ28/LbwxaZ0XP+AIYf2EWfgfEPeveMdQ==",
   "success": true,
-  "projectFilePath": "C:\\Programmering\\github repos\\CarDealer\\CarDealer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Programmering - Skole\\CarDealer\\CarDealer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caspe\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\caspe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\caspe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\caspe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
