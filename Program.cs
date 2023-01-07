@@ -1,11 +1,11 @@
 ﻿
 class Dealership
 {
-    // players
-    private static Customer customer = new Customer(1000f);
-    private static readonly protected CarDealer dealer = new CarDealer(1000f, 5);
 
-    // variables
+    private static Customer customer = new Customer(20000f);
+    private static CarDealer dealer = new CarDealer(1000f, 5);
+
+
     private static int mainMenuOption { get; set; }
 
     private static char isPurchasing { get; set; }
@@ -13,10 +13,9 @@ class Dealership
 
     private static void getOwnedCars()
     {
-        // this loop doesnt grab from the customers owned cars for some reason
-        // it grabs all cars and i have no clue why
 
-        foreach (KeyValuePair<int, Car> i in customer.ownedCars) // this should be grabbing the dict of ownedcars the customer has
+
+        foreach (KeyValuePair<int, Car> i in customer.ownedCars)
         {
             Car chosenCar = i.Value; // this dereferences customers ownedcars into a variable
 
@@ -27,7 +26,7 @@ class Dealership
                 "\nColor: " + chosenCar.color
                 +
                 "\nDamage: " + chosenCar.Damage + "% \n"
-                + 
+                +
                 "Price: " + chosenCar.Price + "$\n"
                 + "Max Speed: " + chosenCar.MaxSpeed + " km/h \n"
                 + "------------------"
@@ -59,8 +58,15 @@ class Dealership
     public static void Main()
     {
         Console.Clear();
-        Console.WriteLine("You are the customer of the dealership, you can buy & sell cars");
+        Console.WriteLine("You are the customer of a dealership, you can buy & sell cars");
+        Console.WriteLine("You have " + customer.Money + " dollars to spend");
         Console.WriteLine("1. See your cars\n2. Sell a car\n3. Buy a car\n");
+        if (customer.Money < 0)
+        {
+            Console.WriteLine("you went into debt, game over..");
+            Console.ReadKey();
+            Environment.Exit(0);
+        }
 
         mainMenuOption = Convert.ToInt32(Console.ReadLine());
 
@@ -79,6 +85,21 @@ class Dealership
                 Main();
                 break;
             case 2:
+                Console.Clear();
+                if (customer.ownedCars.Count > 0)
+                {
+                    getOwnedCars();
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.WriteLine("You have no cars to sell...");
+                    Thread.Sleep(500);
+                    Console.WriteLine("Press any key to return to menu");
+                    Console.ReadKey();
+                    Main();
+                }
+                Console.WriteLine("which car do you wanna sell? (number)");
                 Main();
                 break;
             case 3:
