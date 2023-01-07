@@ -17,7 +17,7 @@ class Dealership
 
         foreach (KeyValuePair<int, Car> i in customer.ownedCars)
         {
-            Car chosenCar = i.Value; // this dereferences customers ownedcars into a variable
+            Car chosenCar = i.Value;
 
 
             Console.WriteLine(
@@ -45,7 +45,7 @@ class Dealership
         }
 
         Car chosenCar = dealer.getCar(carNumber);
-        // like this, do you prefer this? its fine either way
+
         if (customer.purchaseCar(carNumber, chosenCar))
             Console.WriteLine("Car purchased successfully!");
         else
@@ -133,62 +133,3 @@ class Dealership
 
     }
 }
-
-
-// this stuff is like gonna be converted to above dw
-
-// mainMenuOption = Convert.ToInt32(Console.ReadLine());
-
-// switch (mainMenuOption) {
-//     case 1:
-//         Console.Clear();
-
-//         if (customer.carCount > 0) 
-//             for (int i = 0; i < customer.carCount; i++) {
-//                 Console.WriteLine(customer.ownedCars[i]);
-//             }
-//         else
-//             Console.WriteLine("You do not own any cars, buy one...");
-
-//         Console.WriteLine("Press any key to continue...");
-//         Console.ReadKey();
-//         goto start;
-//     case 2:
-//         break;
-//     case 3:
-//         Console.Clear();
-//         dealer.ShowCars();
-//         Console.WriteLine("Do you want to purchase a car? (y/n)");
-
-
-//         isPurchasing = Convert.ToChar(Console.ReadLine());
-
-//         if (isPurchasing == 'y')
-
-
-
-//         goto start;
-//     default:
-//         Console.Clear();
-//         Console.WriteLine("Thats not an option.");
-//         goto start;
-// }
-
-// Console.WriteLine("Hello there. You are owner of a car shop with the objective of selling as many cars as possible");
-// Thread.Sleep(500);
-// Console.WriteLine("These are the cars you have in your dealership");
-// Thread.Sleep(200);
-// carDealer player = new carDealer(1000);
-// player.ShowCars(5);
-
-
-// Console.WriteLine("wanna see them again?");
-// string answerTwo = Console.ReadLine();
-// if (answerTwo == "yes")
-// {
-//     player.ShowCars(0);
-// }
-
-
-
-// Console.ReadLine();
