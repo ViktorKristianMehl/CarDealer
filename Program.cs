@@ -63,6 +63,7 @@ class Dealership
         Console.WriteLine("1. See your cars\n2. Sell a car\n3. Buy a car\n");
         if (customer.Money < 0)
         {
+            Console.Clear();
             Console.WriteLine("you went into debt, game over..");
             Console.ReadKey();
             Environment.Exit(0);
