@@ -7,7 +7,7 @@ public class Customer
     public float Color = 0f;
     public int carCount = 0;
     public Dictionary<int, Car> ownedCars = new Dictionary<int, Car>();
-   
+
     public Customer(float startmoney)
     {
         Money = startmoney;
@@ -16,26 +16,26 @@ public class Customer
     //vores buy method
     public bool purchaseCar(int carNumber, Car car)
     {
-        if (!ownedCars.TryAdd(carNumber, car)) 
+        if (!ownedCars.TryAdd(carNumber, car))
             return false;
 
         Money = Money - car.Price;
-        carCount++; 
+        carCount++;
 
-        return true; 
+        return true;
     }
 
-// vores sell method
-   public bool SellCar(int carNumber, Car car)
+    // vores sell method
+    public bool SellCar(int carNumber, Car car)
     {
-        
-        if (!ownedCars.Remove(carNumber)) 
+
+        if (!ownedCars.Remove(carNumber))
             return false;
 
         Money = Money + ownedCars[carNumber].Price;
-        carCount--; 
+        carCount--;
 
-        return true; 
+        return true;
     }
 
 }
